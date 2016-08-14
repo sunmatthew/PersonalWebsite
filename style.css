@@ -1,0 +1,423 @@
+html, body {
+	margin: 0;
+	padding: 0;
+		height: 100%;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
+}
+
+
+
+/**--------------NAVIGATION-------------------**/
+/**---MOBILE DEVICES--**/
+@media only screen and (max-width: 1050px) {
+	.navigation .container {
+		display: none;
+	}
+
+	.navigation {
+		background:url("images/greypattern.jpg") top center;
+		height: 45px;
+		width: 100%;
+		position: fixed;
+	}
+
+	.mobile-nav p {
+		font-size: 2em;
+		margin-left: 10px;
+		color: #5996F2;
+		float: left;
+	}
+
+	.mobile-nav p:hover {
+		color: #59BCF2;
+	}
+
+	.expand {
+		height: 45px;
+		float: right;
+		margin-right: 10px;
+	}
+
+	.mobile-dropdown {
+		/*width:90%;*/
+		/*display: block;*/
+		margin-top: 45px;
+		right: 0;
+		border-radius: 15px;
+		padding:10px;
+		position: fixed;
+	/*	margin-top:-25px;
+		margin-left:-30%;*/
+		float: right;
+	/*	top:40%;
+		left:50%;*/
+		background-color: rgba(133, 197, 219, 0.9);
+	}
+
+	.mobile-dropdown img {
+		display: block;
+	}
+
+	/*.dropdown {
+		background-color: white;
+	}*/
+
+	/**---------HOMEPAGE---------**/
+	.heading {
+		font-size: 9em;
+		text-align: center;
+		padding-top: 150px;
+		color: white;
+		text-shadow: 0 0 20px #000; 
+	   	margin-bottom: 0px;
+	}
+
+	.home-description {
+		font-size: 2em;
+		color: white;
+		text-shadow: 0 0 20px #000; 
+		width: 45%;
+		margin: auto;
+	}
+
+	.about-me-text {
+		font-size: 16px;
+		text-align: center;
+		width: 61%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+
+	.about-picture table td {
+		padding-bottom: 20px;
+		font-size: 18px;
+		vertical-align: top;
+	}
+
+}
+
+/**---NOT MOBILE DEVICES----**/
+@media only screen and (min-width: 1050px) {
+	.mobile-nav {
+		display: none;
+	}
+
+	.mobile-dropdown {
+		display: none;
+	}
+
+	.navigation {
+	background:url("images/greypattern.jpg") top center;
+	height: 95px;
+	width: 100%;
+	position: fixed;
+	}
+
+	.navigation .container {
+		width: 1071px;
+	}
+
+	.navigation a {
+		text-decoration:  none;
+		color: black;
+	}
+
+	.navigation ul {
+		list-style-type: none;
+		color: black;
+		text-align: center;
+	}
+
+	.navigation li {
+		position: relative;
+		display: inline-block;
+		font-size: 3em;
+		margin-right: 45px;
+	}
+
+	.navigation li:hover {
+	    text-shadow: 0 0 12px #5996F2;
+	    transition: color .5s;  
+
+	}
+
+	.nav-left {
+		display: inline-block;
+		float:left;
+	}
+
+	.nav-right {
+		display: inline-block;
+		float: right;
+	}
+
+	/**-------HOMEPAGE---------**/
+	.heading {
+		font-size: 9em;
+		text-align: center;
+		padding-top: 275px;
+		color: white;
+		text-shadow: 0 0 20px #000; 
+	   	margin-bottom: 0px;
+	}
+
+	.home-description {
+		font-size: 3em;
+		color: white;
+		text-shadow: 0 0 20px #000; 
+		width: 45%;
+		margin: auto;
+	}
+
+	.about-me-text {
+		font-size: 24px;
+		text-align: center;
+		width: 61%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.about-picture table td {
+		padding-bottom: 20px;
+		font-size: 27px;
+		vertical-align: top;
+	}
+}
+
+
+/**-------------------------HOMEPAGE-----------------**/
+.home {
+	background-image: url("images/treebg.png");
+	background-size: cover;
+	text-align: center;
+}
+
+.leggo {
+	margin-top: 20px;
+	font-size: 3em;
+	background: #5996F2;
+	border: none;
+	color: white;
+	padding: 5px 15px;
+}
+
+.leggo:hover {
+	transition: .5s;
+	color: black;
+	background: white;
+}
+
+/**------------------------ABOUT ME TEXT--------------------**/
+.about {
+	margin-top: 20px;
+}
+
+.about-me-heading {
+	font-size: 5em;
+	text-align: center;
+	margin: 0;
+}
+
+.about hr {
+	border: 1px solid black;
+	width: 10%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+/**------------------------------ABOUT ME PICTURE--------------------**/
+.about-picture {
+	background-image: url("images/me.jpg");
+	background-size: cover;
+	text-align: center;
+	height: 100%;
+}
+
+.about-picture .container {
+	height: 100%;
+	width: 100%;
+}
+
+.about-buttons img {
+	margin-top: 40px;
+	margin-left: 15px;
+	margin-right: 15px;
+	transition: all .2s ease-in-out;
+}
+
+.about-buttons img:hover {
+	transform: scale(1.1);
+}
+
+.education-text {
+	width: 55%;
+	margin: auto;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.about-picture table {
+	color: white;
+	/*font-size: 2em;*/
+	text-shadow: 0 0 20px #000; 
+	border: 0;
+}
+
+
+.about-picture .table-heading {
+	margin-right: 40px;
+	vertical-align: top;
+	/*font-size: 27px;*/
+}
+
+.experience-text {
+	width: 55%;
+	margin: auto;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.spacer {
+	margin-bottom: 20px;
+}
+
+/**-------------------------PROJECTS--------------------**/
+.projects {
+	margin-top: 20px;
+	/*background-color: #E1F5FE;*/
+	width: 100%;
+	margin: auto;
+}
+
+.projects-heading {
+	font-size: 8em;
+	text-align: center;
+	margin: 0;
+  	/*text-shadow: 0 0 5px #000; */
+
+	/*color: white;*/
+}
+
+.projects hr {
+	width: 15%;
+	margin: auto;
+	margin-bottom: 40px;
+	border: 1px solid black;
+}
+
+.project-showcase {
+	text-align: center;
+	margin: auto;
+}
+
+.effect {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.effect img {
+	width: 110%;
+}
+
+.effect  figcaption {
+	padding: 20px 30px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	background-color: rgba(133, 197, 219, 0.7);
+	opacity: 0;
+	color: white;
+	transition: all .4s ease-in-out;
+}
+
+.effect figcaption h3 {
+	font-size: 4em;
+	text-shadow: 0 0 20px #000; 
+}
+
+.effect figcaption hr {
+	text-align: left;
+	margin-left: 0;
+	border: 2px solid white;
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+.effect figcaption p {
+	font-size: 1.5em;
+	text-shadow: 0 0 20px #000; 
+}
+
+.effect figcaption .skills {
+	vertical-align: bottom;
+}
+
+.effect:hover > figcaption {
+	transition: all .4s ease-in-out;
+	opacity: 1;
+}
+
+/**--------------------CONTACT ME-----------------**/
+.contact-section {
+	background-color: #666666;
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	padding-bottom: 100px;
+}
+
+.contact-section .contact-heading {
+	font-size: 6em;
+	text-align: center;
+	/*color: #E1F5FE;*/
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+
+.contact-section hr {
+	border: 1px solid #333;
+	width: 10%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.contact-section img {
+	height: 50px;
+	width: 50px;
+}
+
+.contact-section a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.contact-section table {
+	font-size: 2em;
+	/*color: white;*/
+	margin: auto;
+}
+
+.contact-section table td {
+	padding-bottom: 5px;
+}
+
+.footer {
+	background-color: #666;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.footer hr {
+	width: 100%;
+	color: #333;
+}
