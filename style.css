@@ -1,0 +1,144 @@
+shtml, body {
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.about .container {
+	width: 70%;
+}
+
+.about hr {
+	border: 1px solid black;
+	width: 100%;
+	float: left;
+	margin-top: 0;
+}
+
+.about-text {
+	text-align: left;
+	margin: auto;
+	width: 70%;
+}
+
+
+@media only screen and (min-width: 1050px) {
+	.about-text .left-side {
+		width: 60%; 
+	}
+}
+
+.bottom-banner {
+	background-color: #757575;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.bottom-banner .container {
+	color: white;
+	width: 80%;
+	float: center;
+}
+
+.bottom-banner h1 {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.bottom-text {
+	display: inline-block;
+	float: left;
+}
+
+.bottom-buttons {
+	display: inline-block;
+	float: right;
+}
+
+.bottom-buttons a {
+	text-decoration: none;
+	color: white;
+}
+
+.bottom-buttons button {
+	border: 1px solid white;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: transparent;
+	font-size: 24px;
+	margin-top: 5px;
+}
+
+.bottom-buttons button:hover {
+	transition: .5s;
+	color: black;
+	background-color: white;
+}
+
+/**-------------------------PROJECTS--------------------**/
+.projects .container {
+	width: 72%;
+}
+
+.projects hr {
+	border: 1px solid black;
+	width: 100%;
+	float: left;
+	margin-top: 0;
+}
+
+.project-showcase {
+	text-align: center;
+	margin: auto;
+	width: 70%;
+}
+
+.effect img {
+	width: 100%;
+}
+
+.effect  figcaption {
+	padding: 20px 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	color: white;
+	transition: all .4s ease-in-out;
+}
+
+.effect figcaption h3 {
+	text-shadow: 0 0 20px #000; 
+	margin: auto;
+}
+
+.effect figcaption hr {
+	text-align: left;
+	border: 1px solid white;
+	width: 60%;
+	margin: auto;
+}
+
+.effect figcaption p {
+	text-shadow: 0 0 20px #000; 
+	margin: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.effect:hover > figcaption {
+	transition: all .4s ease-in-out;
+	opacity: 1;
+}

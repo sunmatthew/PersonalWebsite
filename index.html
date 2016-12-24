@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Matthew Sun</title>
+		<link rel="shortcut icon" href="images/icon.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css?version=51">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300|Raleway|Dosis' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				// Have a smooth scrolling when clicking navigation button
+				$('a').on('click', function(event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+
+						var hash = this.hash;
+						$('html, body').animate({scrollTop:$(hash).offset().top}, 800, function() {
+							window.location.hash = hash;
+						});
+					}
+				});
+
+				$("#home-button").hide();
+				$(window).scroll(function() {
+					if ($(window).scrollTop() >= 400) {
+						$("#project-button").hide();
+						$("#home-button").fadeIn();
+						// $("#nav").css('position', 'relative');
+					}
+					else {
+						$("#home-button").hide();
+						$("#project-button").fadeIn();
+						
+					}
+				});
+			});
+		</script>
+		<meta name="viewport" content="640px, initial-scale=.5, maximum-scale=.5">
+		<meta name="description" content="Matthew Sun's Personal Website">
+		<meta name="author" content="Matthew Sun">
+	</head>
+
+
+	<body style="display:block;">
+		<div class="about" id="home">
+			<div class="about-text" style="margin-top: 20px;">
+				<p style="font-size: 32px;"><strong>Welcome to my website!</strong></p>
+				<p>I'm currently a first year student at the University of Waterloo pursuing a double degree in Computer Science and Business Administration. Born and raised in the town of Richmond Hill, my hobbies include coding, graphic design, and cooking (even though I'm a terrible cook). I'm always eager to learn more and am always developing small <a href="../index.html">projects</a> on the side, so be sure to check back here once in a while.</p>
+				<p>Check out my GitHub <a href="https://github.com/sunmatthew" target="_blank">here</a> or feel free to contact me at mj4sun@uwaterloo.ca.</p>
+
+				<div class="left-side">
+					<p style="font-size: 20px; margin-bottom: 20px;"><strong><br>Things I Know</strong></p>
+					<img src="images/iconhtml.png" style="height:100px;">
+					<img src="images/iconcss.png" style="height:100px;">
+					<img src="images/iconjquery.png" style="height:100px;">
+					<img src="images/iconbootstrap.png" style="height:100px; margin-left: 10px;">
+					<p style="margin-top: 20px; margin-bottom: 20px;">I have experience in designing aesthetic looking, easy to navigate websites. Using basic HTML and CSS skills for a strong design and layout, JQuery for various effects, and Bootstrap for cross platform layouts.</p>
+
+					<img src="images/iconjava.png" style="height:100px;">
+					<img src="images/iconpython.png" style="height:100px;">
+					<img src="images/iconandroid.png" style="height:100px;">
+					<p style="margin-top: 20px;">Experienced in making functional Android and Java applications as well as utilizing Object Oriented Programming, various data structures, and algorithms. Also experienced in making simple Python applications.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="projects" id="project-page">
+			<div class="container">
+				<h1>MY WORK</h1>
+				<hr>
+			</div>
+			<div class="project-showcase">
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
+					<a href="http://www.fellinisitalianeatery.com" target="_blank">
+						<figure class="effect">
+							<img src="images/felliniscapture.png">
+							<figcaption>
+								<h3>Fellini's Website</h3>
+								<hr>
+								<p>A website developed for Fellini's Italian Eatery, a local restaurant in Oak Ridges.</p>
+								<p class="skills"><br><strong>Skills:</strong><br>HTML, CSS, JavaScript</p>
+
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
+					<a href="https://github.com/sunmatthew/ScoreCounterApp" target="_blank">
+						<figure class="effect">
+							<img src="images/scorecapture.png">
+							<figcaption>
+								<h3>Score Counter</h3>
+								<hr>
+								<p>A simple android app used to keep score between a number of teams.</p>
+								<p class="skills"><br><strong>Skills:</strong><br>Java, XML, Android Studio</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
+					<a href="https://github.com/sunmatthew/PasswordSaverApp" target="_blank">
+						<figure class="effect">
+							<img src="images/passwordcapture.png">
+							<figcaption>
+								<h3>Password Saver</h3>
+								<hr>
+								<p>An android app that saves and organizes passwords.</p>
+								<p class="skills"><br><strong>Skills:</strong><br>Java, XML, Android Studio</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
+					<a href="https://github.com/ConMur/BindingOfMangat" target="_blank">
+						<figure class="effect">
+							<img src="images/mangatcapture.png">
+							<figcaption>
+								<h3>Binding of Mangat</h3>
+								<hr>
+								<p>A Java project done in a group of two parodying the game Binding of Isaac.</p>
+								<p class="skills"><strong>Skills:</strong><br>Java, Object Oriented Programming, Graphic Design</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:150px;">
+					<a href="https://github.com/Qwe1rty/Event-Planner" target="_blank">
+						<figure class="effect">
+							<img src="images/eventcapture.png">
+							<figcaption>
+								<h3>Event Planner</h3>
+								<hr>
+								<p>A Java database group project created to store, organize, and categorize students for school events.</p>
+								<p class="skills"><strong>Skills:</strong><br>Java, User Interface Design</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	
+
+		<div class="bottom-banner">
+			<div class="container">
+				<div class="bottom-text">
+					<h1>MATTHEW SUN</h1>
+					<p>student | programmer | web designer</p>
+				</div>
+
+				<div class="bottom-buttons">
+					<a href="#home" id="home-button"><button style="margin-right: 10px;">HOME</button></a>
+					<a href="#project-page" id="project-button"><button style="margin-right: 10px;">PROJECTS</button></a>
+					<a href="../MatthewSunResume.pdf" target="_blank"><button>RESUME</button></a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+
+</html>
