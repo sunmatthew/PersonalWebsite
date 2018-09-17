@@ -23,7 +23,7 @@
 
 				$("#home-button").hide();
 				$(window).scroll(function() {
-					if ($(window).scrollTop() >= 400) {
+					if ($(window).scrollTop() >= 1800) {
 						$("#project-button").hide();
 						$("#home-button").fadeIn();
 						// $("#nav").css('position', 'relative');
@@ -43,38 +43,87 @@
 
 
 	<body style="display:block;">
-		<div class="about" id="home">
-			<div class="about-text" style="margin-top: 20px;">
-				<p style="font-size: 32px;"><strong>Welcome to my website!</strong></p>
-				<p>I'm currently a first year student at the University of Waterloo pursuing a double degree in Computer Science and Business Administration. Born and raised in the town of Richmond Hill, my hobbies include coding, graphic design, and cooking (even though I'm a terrible cook). I'm always eager to learn more and am always developing small <a href="../index.html">projects</a> on the side, so be sure to check back here once in a while.</p>
-				<p>Check out my GitHub <a href="https://github.com/sunmatthew" target="_blank">here</a> or feel free to contact me at mj4sun@uwaterloo.ca.</p>
-
-				<div class="left-side">
-					<p style="font-size: 20px; margin-bottom: 20px;"><strong><br>Things I Know</strong></p>
-					<img src="images/iconhtml.png" style="height:100px;">
-					<img src="images/iconcss.png" style="height:100px;">
-					<img src="images/iconjquery.png" style="height:100px;">
-					<img src="images/iconbootstrap.png" style="height:100px; margin-left: 10px;">
-					<p style="margin-top: 20px; margin-bottom: 20px;">I have experience in designing aesthetic looking, easy to navigate websites. Using basic HTML and CSS skills for a strong design and layout, JQuery for various effects, and Bootstrap for cross platform layouts.</p>
-
-					<img src="images/iconjava.png" style="height:100px;">
-					<img src="images/iconpython.png" style="height:100px;">
-					<img src="images/iconandroid.png" style="height:100px;">
-					<p style="margin-top: 20px;">Experienced in making functional Android and Java applications as well as utilizing Object Oriented Programming, various data structures, and algorithms. Also experienced in making simple Python applications.</p>
-				</div>
+		
+		<div class="home" id="top">
+			<div class="container" style="text-align:center;">
+				<img src="images/profile.png" class="center-block img-responsive" style="margin-top: 50px;">
+				<a href="#about-me"><button>ABOUT ME</button></a>
 			</div>
 		</div>
 
-		<div class="projects" id="project-page">
-			<div class="container">
-				<h1>MY WORK</h1>
-				<hr>
+
+		<div class="about" id="about-me">
+			<div class="container" style="font-size:24px; width: 75%;">
+				<h1><strong>WELCOME!</strong></h1>
+				<p>I'm currently a student at the University of Waterloo pursuing a double degree in Computer Science and Business Administration. Born and raised in the town of Richmond Hill, my hobbies include coding, music, and cooking (even though I'm a terrible cook). I'm always eager to learn more and am always developing small <a href="#" style="text-decoration: underline;">projects</a> on the side, so be sure to check back here once in a while.</p>
+				<p>Check out my GitHub <a href="https://github.com/sunmatthew" target="_blank" style="text-decoration: underline;">here</a> or feel free to contact me at matthewsun3@gmail.com.</p>
+			
 			</div>
-			<div class="project-showcase">
+		</div>
+
+		<div class="project-showcase" id="projects">
+			<h1 style="color: white; text-align: center; padding-top: 20px; font-size: 48px;">MY WORK</h1>
+			<div class="container">
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px; margin-top: 10px;">
+					<a href="https://github.com/sunmatthew/chipic" target="_blank">
+						<figure class="effect">
+							<img src="images/capturechipic.png">
+							<figcaption>
+								<h3>ChiPic</h3>
+								<hr>
+								<p>A webapp developed for Hackthe6ix 2018 in a group of four to recognize computer chip models from an image</p>
+								<p class="skills"><br><strong>Skills:</strong><br>Python/Flask, OCR Engine, REST API</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px; margin-top: 10px;">
+					<a href="https://github.com/ddclub/ddclub.github.io" target="_blank">
+						<figure class="effect">
+							<img src="images/captureddc.png">
+							<figcaption>
+								<h3>Double Degree Site</h3>
+								<hr>
+								<p>A remake of the Double Degree site done in a group of five, using React.js as the main framework.</p>
+								<p class="skills"><strong>Skills:</strong><br>React.js, Prismic CMS</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px; margin-top: 10px;">
+					<a href="https://github.com/ConMur/BindingOfMangat" target="_blank">
+						<figure class="effect">
+							<img src="images/capturemangat.png">
+							<figcaption>
+								<h3>Binding of Mangat</h3>
+								<hr>
+								<p>A Java project done in a group of two parodying the game Binding of Isaac.</p>
+								<p class="skills"><strong>Skills:</strong><br>Java, Object Oriented Programming, Graphic Design</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
+					<a href="https://github.com/Qwe1rty/Event-Planner" target="_blank">
+						<figure class="effect">
+							<img src="images/captureeventplanner.png">
+							<figcaption>
+								<h3>Event Planner</h3>
+								<hr>
+								<p>A Java database group project created to store, organize, and categorize students for school events.</p>
+								<p class="skills"><strong>Skills:</strong><br>Java, User Interface Design</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
 				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
 					<a href="http://www.fellinisitalianeatery.com" target="_blank">
 						<figure class="effect">
-							<img src="images/felliniscapture.png">
+							<img src="images/capturefellinis.png">
 							<figcaption>
 								<h3>Fellini's Website</h3>
 								<hr>
@@ -86,15 +135,15 @@
 					</a>
 				</div>
 
-				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
-					<a href="https://github.com/sunmatthew/ScoreCounterApp" target="_blank">
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px; ">
+					<a href="https://github.com/sunmatthew/TypingGame" target="_blank">
 						<figure class="effect">
-							<img src="images/scorecapture.png">
+							<img src="images/capturetyping.png">
 							<figcaption>
-								<h3>Score Counter</h3>
+								<h3>Firebase Typing Game</h3>
 								<hr>
-								<p>A simple android app used to keep score between a number of teams.</p>
-								<p class="skills"><br><strong>Skills:</strong><br>Java, XML, Android Studio</p>
+								<p>A quick game made with Firebase's Real-Time Database where users can play a real-time messenger game.</p>
+								<p class="skills"><strong>Skills:</strong><br>HTML, CSS, JavaScript, Firebase API</p>
 							</figcaption>
 						</figure>
 					</a>
@@ -103,7 +152,7 @@
 				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
 					<a href="https://github.com/sunmatthew/PasswordSaverApp" target="_blank">
 						<figure class="effect">
-							<img src="images/passwordcapture.png">
+							<img src="images/capturepasswordsaver.png">
 							<figcaption>
 								<h3>Password Saver</h3>
 								<hr>
@@ -114,48 +163,45 @@
 					</a>
 				</div>
 
-					<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
-					<a href="https://github.com/ConMur/BindingOfMangat" target="_blank">
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
+					<a href="https://github.com/sunmatthew/ScoreCounterApp" target="_blank">
 						<figure class="effect">
-							<img src="images/mangatcapture.png">
+							<img src="images/capturescorecounter.png">
 							<figcaption>
-								<h3>Binding of Mangat</h3>
+								<h3>Score Counter</h3>
 								<hr>
-								<p>A Java project done in a group of two parodying the game Binding of Isaac.</p>
-								<p class="skills"><strong>Skills:</strong><br>Java, Object Oriented Programming, Graphic Design</p>
+								<p>A simple android app used to keep score between a number of teams.</p>
+								<p class="skills"><br><strong>Skills:</strong><br>Java, XML, Android Studio</p>
 							</figcaption>
 						</figure>
 					</a>
 				</div>
 
-				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:150px;">
-					<a href="https://github.com/Qwe1rty/Event-Planner" target="_blank">
-						<figure class="effect">
-							<img src="images/eventcapture.png">
-							<figcaption>
-								<h3>Event Planner</h3>
-								<hr>
-								<p>A Java database group project created to store, organize, and categorize students for school events.</p>
-								<p class="skills"><strong>Skills:</strong><br>Java, User Interface Design</p>
-							</figcaption>
+
+				<div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom:30px;">
+					 <a href="https://github.com/sunmatthew" target="_blank">
+					 	<figure class="effect">
+							<img src="images/capturemore.png">
+							<figcaption style="text-align: center;">
+								<img src="images/git.png" style="width: 100px;">
+								<h2>View GitHub</h2>
 						</figure>
-					</a>
+					 </a>
 				</div>
 			</div>
 		</div>
-
 	
 
 		<div class="bottom-banner">
 			<div class="container">
 				<div class="bottom-text">
-					<h1>MATTHEW SUN</h1>
-					<p>student | programmer | web designer</p>
+					<a href="#top" style="text-decoration: none;"><h1>MATTHEW SUN</h1>
+					<p>student | programmer | aspiring chef</p></a>
 				</div>
 
 				<div class="bottom-buttons">
-					<a href="#home" id="home-button"><button style="margin-right: 10px;">HOME</button></a>
-					<a href="#project-page" id="project-button"><button style="margin-right: 10px;">PROJECTS</button></a>
+					<a href="#top" id="home-button"><button style="margin-right: 10px;">HOME</button></a>
+					<a href="#projects" id="project-button"><button style="margin-right: 10px;">PROJECTS</button></a>
 					<a href="../MatthewSunResume.pdf" target="_blank"><button>RESUME</button></a>
 				</div>
 			</div>

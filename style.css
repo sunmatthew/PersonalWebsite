@@ -1,40 +1,53 @@
-shtml, body {
+html, body {
 	margin: 0;
 	padding: 0;
-	background-color: #EEEEEE;
 }
 
 body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-.about .container {
-	width: 70%;
+
+.home {
+	height: 600px;
+	background-image: url("Images/bg.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
-.about hr {
-	border: 1px solid black;
-	width: 100%;
-	float: left;
-	margin-top: 0;
-}
-
-.about-text {
-	text-align: left;
-	margin: auto;
-	width: 70%;
+.home .container a {
+	text-decoration: none;
+	color: white;
 }
 
 
-@media only screen and (min-width: 1050px) {
-	.about-text .left-side {
-		width: 60%; 
-	}
+.profile-photo {
+	padding-top: 50px;
 }
+
+.home .container button {
+	margin-top: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: transparent;
+	border: 1px solid white;
+	font-size: 24px;
+}
+
+.home .container button:hover {
+	transition: .5s;
+	border: 1px solid #009688;
+	color: white;
+	background-color: #009688;
+}
+
 
 .bottom-banner {
-	background-color: #757575;
-	padding-bottom: 30px;
+	background-color: #424242;
+	padding-bottom: 25px;
 	padding-top: 30px;
 	bottom: 0;
 	position: fixed;
@@ -50,6 +63,15 @@ body {
 .bottom-banner h1 {
 	margin-bottom: 0;
 	margin-top: 0;
+}
+
+.bottom-banner a {
+	color: white;
+}
+
+.bottom-banner a:hover {
+	transition: .5s;
+	color: #009688;
 }
 
 .bottom-text {
@@ -79,30 +101,58 @@ body {
 
 .bottom-buttons button:hover {
 	transition: .5s;
-	color: black;
-	background-color: white;
+	border: 1px solid #009688;
+	color: white;
+	background-color: #009688;
 }
 
-/**-------------------------PROJECTS--------------------**/
-.projects .container {
-	width: 72%;
+
+/**----------------ABOUT-------------------**/
+.about {
+	text-align: center;
+	padding-bottom: 100px;
 }
 
-.projects hr {
+.about h1 {
+	margin-top: 60px;
+}
+
+.about p {
+	text-align: left;
+}
+
+.about .container button {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: transparent;
 	border: 1px solid black;
-	width: 100%;
-	float: left;
-	margin-top: 0;
+	font-size: 24px;
 }
 
+.about .container button:hover {
+	transition: .5s;
+	border: 1px solid #009688;
+	color: white;
+	background-color: #009688;
+}
+
+/**-----------------PROJECTS--------------**/
 .project-showcase {
+	background-color: #334055;
+	padding-bottom: 200px;
+}
+
+.project-showcase .container {
 	text-align: center;
 	margin: auto;
-	width: 70%;
+	width: 80%;
 }
 
-.effect img {
+.project-showcase .container img{
 	width: 100%;
+	margin: 0;
 }
 
 .effect  figcaption {
@@ -110,29 +160,27 @@ body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	text-align: left;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 150, 136, 0.6);
 	opacity: 0;
 	color: white;
 	transition: all .4s ease-in-out;
 }
 
 .effect figcaption h3 {
-	text-shadow: 0 0 20px #000; 
 	margin: auto;
 }
 
 .effect figcaption hr {
-	text-align: left;
 	border: 1px solid white;
 	width: 60%;
 	margin: auto;
+	float: left;
 }
 
 .effect figcaption p {
-	text-shadow: 0 0 20px #000; 
 	margin: auto;
 	margin-top: 10px;
 	overflow: hidden;
